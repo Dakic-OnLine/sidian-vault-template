@@ -197,7 +197,7 @@ This template is connected to a GitHub repository. To make it truly yours, you h
 ### Daily Workflow
 
 1. **Morning** - Open `Home.md` to see your focus
-2. **Capture** - Use `Inbox.md` for quick thoughts throughout the day
+2. **Capture** - Use `00_Inbox/Inbox.md` for quick thoughts throughout the day
 3. **Journal** - End day by writing in `02_Diary/YYYY-MM-DD.md`
 4. **Review** - Check off completed tasks in goal plans
 

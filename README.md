@@ -9,14 +9,16 @@ A personal knowledge management and productivity system built on Obsidian. Combi
 1. Open this folder as a vault in Obsidian
 2. Start at `Home.md` - your personal dashboard
 3. Read `Guide.md` for complete system documentation
-4. Capture quick thoughts in `Inbox.md`
+4. Capture quick thoughts in `00_Inbox/Inbox.md`
 5. Create your first daily entry in `02_Diary/`
 
 ## Folder Structure
 
 ```
+00_Inbox/            # Quick capture for thoughts, ideas, assignments
 01_ThinkingLines/     # Long-form thinking and conceptual notes
 02_Diary/             # Daily journal entries (YYYY-MM-DD.md)
+02_Longer_writes/    # Extended writing pieces
 03_Goals/             # Long-term goals and their plans
   ├─ Archive/         # Inactive/paused goals
   └─ Developing/      # Goals being explored
@@ -27,7 +29,6 @@ A personal knowledge management and productivity system built on Obsidian. Combi
   ├─ Daily/           # Daily reports
   ├─ Research/        # Research reports
   └─ Review/          # Review reports
-92_Longer_writes/     # Extended writing pieces
 99_Assets/            # Templates
   └─ templates/       # All interval templates
 ```
@@ -56,7 +57,7 @@ Each goal has a companion plan file with actionable next steps.
 
 ### Inbox Processing
 
-Use `Inbox.md` to quickly capture thoughts. Tag each item:
+Use `00_Inbox/Inbox.md` to quickly capture thoughts. Tag each item:
 - `#idea` - Concepts and possibilities
 - `#note` - Observations and reflections
 - `#action` - Things to implement

@@ -2,8 +2,10 @@
 ## Folder Organization
 
 ```
+00_Inbox/            # Quick capture for thoughts, ideas, assignments
 01_ThinkingLines/     # Long-form thinking and conceptual notes
 02_Diary/             # Daily journal entries (YYYY-MM-DD.md)
+02_Longer_writes/    # Extended writing pieces
 03_Goals/             # Long-term goals and their plans
   ├─ Archive/         # Inactive/paused goals (excluded from reviews)
   └─ Developing/      # Goals still being formed or explored
@@ -14,7 +16,6 @@
   ├─ Daily/           # Daily reports (YYYY-MM-DD Report.md)
   ├─ Research/        # Research reports (Research - Topic.md)
   └─ Review/          # Review reports (Review - Topic.md)
-92_Longer_writes/     # Extended writing pieces
 99_Assets/            # Templates
   └─ templates/       # All interval templates (daily, weekly, monthly, quarterly)
 ```
@@ -569,7 +570,7 @@ When generating daily reports, check if the diary entry contains `#review` or `#
 
 ## Overview
 
-The daily review process captures random thoughts from `Inbox.md`, tags them, and distributes them to appropriate locations.
+The daily review process captures random thoughts from `00_Inbox/Inbox.md`, tags them, and distributes them to appropriate locations.
 
 ## Tag Types
 
@@ -585,9 +586,9 @@ The daily review process captures random thoughts from `Inbox.md`, tags them, an
 
 ## Process
 
-### Step 1: Process @Inbox.md
+### Step 1: Process @00_Inbox/Inbox.md
 
-For each paragraph (blank-line separated) in `Inbox.md`:
+For each paragraph (blank-line separated) in `00_Inbox/Inbox.md`:
 
 1. **Read the note**
 2. **Tag it**: `#idea` | `#note` | `#action` | `#review` | `#research`
@@ -608,7 +609,7 @@ When AI processes inbox:
 1. **For #action and #note**: Append to today's diary with tag
 2. **For #review**: Create review report immediately, link from diary
 3. **For #research**: Launch research subagent immediately, link from diary when complete
-4. **Clear Inbox.md** when all items processed
+4. **Clear 00_Inbox/Inbox.md** when all items processed
 
 ## Template
 
