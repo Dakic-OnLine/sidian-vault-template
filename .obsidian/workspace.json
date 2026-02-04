@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "816e86ffa7fcaa16",
+        "id": "85db7b77e928d087",
         "type": "tabs",
         "children": [
           {
-            "id": "a3a7c30c82a99787",
+            "id": "c622e0dac0b9ac2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SETUP.md",
+                "file": "Guide - Tag System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SETUP"
+              "title": "Guide - Tag System"
             }
           }
         ]
@@ -185,14 +185,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3a7c30c82a99787",
+  "active": "c622e0dac0b9ac2b",
   "lastOpenFiles": [
-    "README.md",
-    "Home.md",
-    "SETUP.md",
-    "Inbox.md",
+    "Guide.md",
     "Guide - Properties.md",
     "Guide - Tag System.md",
+    "SETUP.md",
+    "README.md",
+    "Home.md",
+    "Inbox.md",
     "03_Goals/Developing/Example - Remote Work.md",
     "03_Goals/Developing/README.md",
     "03_Goals/Developing",
@@ -212,7 +213,6 @@
     "03_Goals/Archive/README.md",
     "03_Goals/Learn Spanish - Plan.md",
     "03_Goals/Example - Learn Spanish.md",
-    "02_Diary/2026-01-15.md",
-    "01_ThinkingLines/Example - Deep Work.md"
+    "02_Diary/2026-01-15.md"
   ]
 }
