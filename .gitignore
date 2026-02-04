@@ -1,0 +1,17 @@
+# Obsidian
+.obsidian/workspace
+.obsidian/workspace-mobile
+.obsidian/workspace.json
+
+# Obsidian Plugin Data
+.obsidian/plugins/obsidian-git/data.json
+
+# macOS
+.DS_Store
+
+# Thumbnails
+.thumbnail/
+
+# Temporary files
+*.tmp
+*~

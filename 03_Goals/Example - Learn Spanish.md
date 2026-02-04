@@ -1,3 +1,12 @@
+---
+status: active
+area: learning
+start_date: 2026-01-01
+target_date: 2026-12-31
+priority: high
+tags: [language, spanish, daily]
+---
+
 # Learn Spanish
 
 Reach conversational fluency in Spanish within 12 months.

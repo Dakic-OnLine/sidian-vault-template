@@ -367,6 +367,66 @@ When the goal is clear and you're ready to commit:
 
 ---
 
+# Maintaining Home.md
+
+`Home.md` is your personal dashboard - the first thing you see when opening your vault. Keep it updated to reflect your current priorities.
+
+## What to Update
+
+### Current Focus Section
+
+Update when:
+- You **start** a new goal - add it to the list
+- You **complete** a goal - remove it from the list
+- You **archive** a goal - move it from Current Focus
+- You **promote** a goal from Developing - add it here
+
+### Developing Ideas Section
+
+Update when:
+- You move a goal to `03_Goals/Developing/` - add it here
+- A developing goal becomes active - remove from here
+- You abandon an exploration - delete from here
+
+### Recent Activity Section
+
+Update when:
+- You create a new diary entry - link the latest one
+- You create a weekly plan - link the current week
+- You complete a monthly review - link the latest month
+
+### Active Goals Overview Table
+
+Update when:
+- Goals change status (On Track → Stalled or vice versa)
+- Next actions change
+- Goals are added or removed
+
+## How Often to Update
+
+| Frequency | What to Update |
+|-----------|----------------|
+| **Daily** | Recent Activity links |
+| **Weekly** | Active Goals Overview table, Current Focus |
+| **Monthly** | Full review of all sections, remove completed items |
+
+## Quick Update Checklist
+
+During your weekly review:
+- [ ] Are Current Focus goals still active?
+- [ ] Any developing goals ready to promote?
+- [ ] Are Recent Activity links current?
+- [ ] Does the Goals Overview table reflect latest status?
+
+## Automation Tips
+
+If you use AI to generate reports, ask it to:
+1. Suggest updates to Home.md based on recent activity
+2. Identify goals that should be added or removed
+3. Update the Active Goals Overview table with latest statuses
+
+---
+
 # Review & Research Tag Processing
 
 ## Two Types of Requests
