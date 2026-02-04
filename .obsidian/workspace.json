@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "85db7b77e928d087",
+        "id": "b532c0f7084838b1",
         "type": "tabs",
         "children": [
           {
-            "id": "c622e0dac0b9ac2b",
+            "id": "47e0f86d368da8f7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Guide - Tag System.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Guide - Tag System"
+              "title": "New tab"
             }
           }
         ]
@@ -185,16 +181,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c622e0dac0b9ac2b",
+  "active": "47e0f86d368da8f7",
   "lastOpenFiles": [
     "Guide.md",
-    "Guide - Properties.md",
-    "Guide - Tag System.md",
-    "SETUP.md",
-    "README.md",
     "Home.md",
-    "Inbox.md",
+    "31_Monthly_Reviews/2026-01.md",
     "03_Goals/Developing/Example - Remote Work.md",
+    "Complete writing project.md",
+    "03_Goals/Example - Learn Spanish.md",
+    "README.md",
+    "SETUP.md",
+    "Guide - Tag System.md",
+    "Guide - Properties.md",
+    "Inbox.md",
     "03_Goals/Developing/README.md",
     "03_Goals/Developing",
     "99_Assets/templates/tm_quarterly_strategy.md",
@@ -208,11 +207,8 @@
     "50_Reports/Research/Example - Time Blocking.md",
     "50_Reports/Daily/2026-01-15 Report.md",
     "32_Quarterly_Strategy/2026-Q1.md",
-    "31_Monthly_Reviews/2026-01.md",
     "30_Weekly_Plans/2026-W03.md",
     "03_Goals/Archive/README.md",
-    "03_Goals/Learn Spanish - Plan.md",
-    "03_Goals/Example - Learn Spanish.md",
-    "02_Diary/2026-01-15.md"
+    "03_Goals/Learn Spanish - Plan.md"
   ]
 }
