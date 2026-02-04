@@ -5,7 +5,8 @@
 01_ThinkingLines/     # Long-form thinking and conceptual notes
 02_Diary/             # Daily journal entries (YYYY-MM-DD.md)
 03_Goals/             # Long-term goals and their plans
-  └─ Archive/         # Inactive/paused goals (excluded from reviews)
+  ├─ Archive/         # Inactive/paused goals (excluded from reviews)
+  └─ Developing/      # Goals still being formed or explored
 30_Weekly_Plans/      # Weekly execution plans (links to goals)
 31_Monthly_Reviews/   # Monthly reviews and goal adjustments
 32_Quarterly_Strategy/ # Quarterly strategy and new goal creation
@@ -147,7 +148,7 @@ Create a concise daily report that observes patterns, tracks goals, and provides
 - Celebrate self-awareness when present
 
 ### Goals & Next Steps
-- Review **active** files in `03_Goals/` (exclude `Archive/` subfolder)
+- Review **active** files in `03_Goals/` (exclude `Archive/` and `Developing/` subfolders)
 - Goals are named `Goal Name.md` and link to their plan with `Plan: [[Goal Name - Plan]]`
 - Plans are named `Goal Name - Plan.md` and link back with `Goal: [[Goal Name]]`
 - For goals with plans: read plan, extract first unchecked item
@@ -333,6 +334,36 @@ Move goals to `03_Goals/Archive/` when:
 To bring back an archived goal:
 1. Move files from `Archive/` back to `03_Goals/`
 2. Goal will appear in next review cycle
+
+---
+
+# Goal Development
+
+## What is Developing?
+
+The `03_Goals/Developing/` folder is for goals that are still being formed or explored.
+
+## When to Use Developing
+
+Put goals in `Developing/` when:
+- You're exploring an idea but not ready to commit
+- The goal is still vague and needs definition
+- You're testing whether it's worth pursuing
+- You want to experiment before full commitment
+
+## How to Move to Active
+
+When the goal is clear and you're ready to commit:
+1. Create proper goal file in `03_Goals/`
+2. Create corresponding plan file
+3. Delete from `Developing/` folder
+
+## Difference from Archive
+
+| Folder | Purpose | Included in Reviews? |
+|--------|---------|---------------------|
+| `Developing/` | Goals being explored | Yes, as "exploring" |
+| `Archive/` | Inactive/paused goals | No |
 
 ---
 
@@ -543,7 +574,7 @@ Read the latest entries from `02_Diary/` (past 3-7 days) to understand:
 
 ### Step 2: Review Active Goals
 
-Read **active** files in `03_Goals/` (exclude `Archive/` subfolder):
+Read **active** files in `03_Goals/` (exclude `Archive/` and `Developing/` subfolders):
 - Main goal files (e.g., `Goal Name.md`)
 - Plan files (e.g., `Goal Name - Plan.md`)
 - Extract next actions from plan checklists
