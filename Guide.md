@@ -14,7 +14,7 @@
   ├─ Research/        # Research reports (Research - Topic.md)
   └─ Review/          # Review reports (Review - Topic.md)
 92_Longer_writes/     # Extended writing pieces
-99_Assets/            # Templates and scripts
+99_Assets/            # Templates
   └─ templates/       # All interval templates (daily, weekly, monthly, quarterly)
 ```
 
@@ -79,10 +79,6 @@ Create a concise daily report that observes patterns, tracks goals, and provides
 - **Location**: `50_Reports/Daily/` folder
 - **Filename**: `YYYY-MM-DD Report.md` (today's date)
 - **Always overwrite** existing reports
-
-## After Creating Report
-- **Optional: Send email** - Configure your email script to read today's report and send it
-- Example command: `your-email-script daily-report` (customize to your setup)
 
 ## Report Structure
 
@@ -357,7 +353,6 @@ To bring back an archived goal:
 3. **Provide analysis**: Give thoughtful feedback, perspective, or answer based on knowledge
 4. **Create review** in `50_Reports/Review/` folder
 5. **Replace tag**: `#review` → `[[Review - Topic Name]]`
-6. **Optional: Send email** with the review using your email script
 
 ### For #research
 1. **Scan for #research**: Search all notes for `#research` tag
@@ -368,7 +363,6 @@ To bring back an archived goal:
    - Each subagent handles web search, source reading, and synthesis independently
 4. **Create research report** in `50_Reports/Research/` folder (subagent will do this)
 5. **Replace tag**: `#research` → `[[Research - Topic Name]]`
-6. **Optional: Send email** with the research using your email script
 
 **Why use parallel subagents:**
 - Multiple research tasks can run simultaneously without blocking each other
