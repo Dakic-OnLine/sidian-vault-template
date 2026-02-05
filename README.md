@@ -2,6 +2,8 @@
 
 A personal knowledge management and productivity system built on Obsidian. Combines daily journaling, goal tracking, and structured planning into one integrated system.
 
+It is meant to be used with SidianSidekick service. 
+
 ## Quick Start
 
 **First time?** See **[SETUP.md](SETUP.md)** for complete installation and configuration instructions.
