@@ -8,12 +8,15 @@ It is meant to be used with SidianSidekick service.
 
 This repository is a **GitHub template**. Click the green **"Use this template"** button above to create your own copy.
 
-
+![Click "Use this template" then "Create a new repository"](99_Assets/use-template-button.png)
 
 ### Getting Started
 
 1. Click **"Use this template"** → **"Create a new repository"**
-2. Name your new vault (e.g., `my-vault`)
+2. Name your vault and click **"Create repository"**
+
+![Name your repository and create it](99_Assets/create-repo-form.png)
+
 3. Clone your new repo locally
 4. Open the folder in Obsidian as a vault
 5. Follow the **[SETUP.md](SETUP.md)** guide
