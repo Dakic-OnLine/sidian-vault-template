@@ -2,7 +2,23 @@
 
 A personal knowledge management and productivity system built on Obsidian. Combines daily journaling, goal tracking, and structured planning into one integrated system.
 
-It is meant to be used with SidianSidekick service. 
+It is meant to be used with SidianSidekick service.
+
+## Use This Template
+
+This repository is a **GitHub template**. Click the green **"Use this template"** button above to create your own copy.
+
+
+
+### Getting Started
+
+1. Click **"Use this template"** → **"Create a new repository"**
+2. Name your new vault (e.g., `my-vault`)
+3. Clone your new repo locally
+4. Open the folder in Obsidian as a vault
+5. Follow the **[SETUP.md](SETUP.md)** guide
+
+> **Note**: You'll get all the folders, templates, and documentation. Personal content (diary entries, goals, etc.) is not included.
 
 ## Quick Start
 
