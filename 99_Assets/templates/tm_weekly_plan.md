@@ -1,27 +1,13 @@
 # Week ## (YYYY-MM-DD to YYYY-MM-DD)
 
-## Focus
-[1-2 sentence main focus for the week]
+## Weekly Focus
+- [ ]
+- [ ]
+- [ ]
 
-## Priorities
-- [ ] Priority 1
-- [ ] Priority 2
-- [ ] Priority 3
+## Weekly Plan
+- [ ]
+- [ ]
+- [ ]
 
-## Key Tasks
-- [ ] Task A
-- [ ] Task B
-- [ ] Task C
-
-## Review (end of week)
-**Wins:**
--
--
-
-**Challenges:**
--
--
-
-**Next week focus:**
--
--
+## Log
