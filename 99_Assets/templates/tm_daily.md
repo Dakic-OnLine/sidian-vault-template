@@ -1,18 +1,11 @@
 # {{date:YYYY-MM-DD}}
 
-## Top 3
+## Daily Focus
 - [ ]
 - [ ]
 - [ ]
 
 ## Log
--
--
--
-
-## Notes
--
--
 
 ## Links
 - [[Related goal]]
