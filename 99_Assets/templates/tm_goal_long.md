@@ -3,6 +3,11 @@
 ## Goal Statement
 [Clear description of the end result - what does success look like?]
 
+## Status
+- **State**: On track / At risk / Off track / Done / Dropped
+- **Confidence (1-5)**:
+- **Owner**:
+
 ## Success Criteria
 - [Criterion 1]
 - [Criterion 2]
@@ -10,6 +15,13 @@
 
 ## Baseline
 [Where you are now - metrics, constraints, starting point]
+
+## Constraints
+- [Constraint 1]
+- [Constraint 2]
+
+## Non-Goals
+- [What this goal explicitly does not include]
 
 ## SMART Check
 - **Specific:**
@@ -33,6 +45,10 @@
 ## Risks
 - [Risk 1]
 - [Risk 2]
+
+## Kill Criteria
+- [Condition that triggers a pivot]
+- [Condition that triggers a pause]
 
 Plan: [[Goal Name - Plan]]
 
