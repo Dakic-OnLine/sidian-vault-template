@@ -8,11 +8,11 @@
 **Energy pattern:** [observations]
 
 ## Goals Progress
-| Goal | Status | Progress | Next step |
-|------|--------|----------|-----------|
-| [[Goal 1]] | On Track/Stalled | [Brief update] | [Next step] |
-| [[Goal 2]] | On Track/Stalled | [Brief update] | [Next step] |
-| [[Goal 3]] | On Track/Stalled | [Brief update] | [Next step] |
+| Goal | State | Confidence (1-5) | Progress | Next step |
+|------|-------|------------------|----------|-----------|
+| [[Goal 1]] | On track/At risk/Off track/Done/Dropped |  | [Brief update] | [Next step] |
+| [[Goal 2]] | On track/At risk/Off track/Done/Dropped |  | [Brief update] | [Next step] |
+| [[Goal 3]] | On track/At risk/Off track/Done/Dropped |  | [Brief update] | [Next step] |
 
 ## Metrics
 | Metric | Target | Actual | Notes |
@@ -28,7 +28,27 @@
 -
 -
 
+## Carry-over Items
+| Item | Why it carried over | Decision |
+|------|---------------------|----------|
+|      |                     | Continue/Pause/Drop |
+|      |                     | Continue/Pause/Drop |
+
+## Stop / Start / Continue
+**Stop**
+-
+
+**Start**
+-
+
+**Continue**
+-
+
 ## Decisions Made
+-
+-
+
+## Tradeoffs Accepted
 -
 -
 
@@ -37,7 +57,7 @@
 2. [Adjustment 2]
 3. [Adjustment 3]
 
-## Focus Areas for Next Month
-1. [Focus area 1]
-2. [Focus area 2]
-3. [Focus area 3]
+## Top 3 Commitments for Next Month
+1. [Commitment 1]
+2. [Commitment 2]
+3. [Commitment 3]
