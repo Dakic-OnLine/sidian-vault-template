@@ -130,8 +130,6 @@ Use `00_Inbox/Inbox.md` to quickly capture thoughts. Tag each item:
 ## Recommended Plugins
 
 - **Obsidian Git** - Version control backup
-- **Dataview** - Query and visualize vault data (optional)
-- **Templater** - Advanced templates (optional)
 
 ## License
 
