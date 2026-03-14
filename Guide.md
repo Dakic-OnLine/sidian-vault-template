@@ -1,23 +1,38 @@
+# Guide
+
+## Contents
+
+- [Folder Organization](#folder-organization)
+- [Planning System](#planning-system)
+- [Report Generation](#report-generation-instructions)
+- [Goal Management](#updating-goals-from-daily-journals)
+- [Tag System](#tag-system)
+- [Review & Research](#review--research-tag-processing)
+- [Daily Review Process](#daily-review--inbox-processing)
+- [Weekly Planning](#weekly-plan-creation)
+
+---
 
 ## Folder Organization
 
 ```
 00_Inbox/            # Quick capture for thoughts, ideas, assignments
-01_ThinkingLines/     # Long-form thinking and conceptual notes
-02_Diary/             # Daily journal entries (YYYY-MM-DD.md)
-02_Longer_writes/    # Extended writing pieces
-03_Goals/             # Long-term goals and their plans
-  ├─ Archive/         # Inactive/paused goals (excluded from reviews)
-  └─ Developing/      # Goals still being formed or explored
-30_Weekly_Plans/      # Weekly execution plans (links to goals)
-31_Monthly_Reviews/   # Monthly reviews and goal adjustments
-32_Quarterly_Strategy/ # Quarterly strategy and new goal creation
-50_Reports/           # Reports organized by type
-  ├─ Daily/           # Daily reports (YYYY-MM-DD Report.md)
-  ├─ Research/        # Research reports (Research - Topic.md)
-  └─ Review/          # Review reports (Review - Topic.md)
-99_Assets/            # Templates
-  └─ templates/       # All interval templates (daily, weekly, monthly, quarterly)
+01_Journal/          # Daily journal entries (YYYY-MM-DD.md)
+02_MindSpace/        # Conceptual notes and thinking pieces
+  └─ _LongWriting/   # Extended writing pieces and essays
+03_Goals/            # Long-term goals and their plans
+  ├─ Archive/        # Inactive/paused goals (excluded from reviews)
+  └─ Developing/     # Goals still being formed or explored
+04_Planning/         # Weekly, Monthly, Quarterly plans
+  ├─ 1_Weekly/       # Weekly execution plans (YYYY-W##.md)
+  ├─ 2_Monthly/      # Monthly reviews (YYYY-MM.md)
+  └─ 3_Quarterly/    # Quarterly strategy (YYYY-Q#.md)
+50_Reports/          # Reports organized by type
+  ├─ Daily/          # Daily reports (YYYY-MM-DD Report.md)
+  ├─ Research/       # Research reports (Research - Topic.md)
+  └─ Review/         # Review reports (Review - Topic.md)
+99_Assets/           # Templates
+  └─ templates/      # All interval templates (daily, weekly, monthly, quarterly)
 ```
 
 ## Planning System
@@ -26,25 +41,25 @@
 
 | Level | Folder | Purpose | File Naming |
 |-------|--------|---------|-------------|
-| Quarterly | `32_Quarterly_Strategy/` | High-level strategy, new goals | `YYYY-Q#.md` |
-| Monthly | `31_Monthly_Reviews/` | Review progress, adjust goals | `YYYY-MM.md` |
-| Weekly | `30_Weekly_Plans/` | Execute on goals, daily breakdown | `YYYY-W##.md` |
+| Quarterly | `04_Planning/3_Quarterly/` | High-level strategy, new goals | `YYYY-Q#.md` |
+| Monthly | `04_Planning/2_Monthly/` | Review progress, adjust goals | `YYYY-MM.md` |
+| Weekly | `04_Planning/1_Weekly/` | Execute on goals, daily breakdown | `YYYY-W##.md` |
 | Goals | `03_Goals/` | Long-term goals and plans | `Goal Name.md` |
-| Daily | `02_Diary/` | Journal entries | `YYYY-MM-DD.md` |
+| Daily | `01_Journal/` | Journal entries | `YYYY-MM-DD.md` |
 
 ### How They Connect
 
-1. **Quarterly Strategy** (`32_Quarterly_Strategy/`):
+1. **Quarterly Strategy** (`04_Planning/3_Quarterly/`):
    - Defines 3 core focus areas for the quarter
    - Creates new goals in `03_Goals/`
    - Breaks down into monthly priorities
 
-2. **Monthly Reviews** (`31_Monthly_Reviews/`):
+2. **Monthly Reviews** (`04_Planning/2_Monthly/`):
    - Review progress on all goals
    - Adjust priorities based on what's working
    - Link back to goals in `03_Goals/`
 
-3. **Weekly Plans** (`30_Weekly_Plans/`):
+3. **Weekly Plans** (`04_Planning/1_Weekly/`):
    - Link to specific goals being worked on
    - Daily task breakdown
    - End-of-week review for learning
@@ -56,13 +71,26 @@
 ### Example Workflow
 
 ```
-32_Quarterly_Strategy/2025-Q1.md
+04_Planning/3_Quarterly/2025-Q1.md
 ├── Creates → [[Launch online store]] in 03_Goals/
 │
-31_Monthly_Reviews/2025-01.md
+04_Planning/2_Monthly/2025-01.md
 ├── Reviews → [[Launch online store]] progress
 │
-30_Weekly_Plans/2025-W01.md
+04_Planning/1_Weekly/2025-W01.md
+├── Links to → [[Launch online store]]
+└── Daily tasks from → [[Launch online store - Plan]]
+│
+03_Goals/Launch online store.md
+└── Contains plan link → [[Launch online store - Plan]]
+```
+04_Planning/3_Quarterly/2025-Q1.md
+├── Creates → [[Launch online store]] in 03_Goals/
+│
+04_Planning/2_Monthly/2025-01.md
+├── Reviews → [[Launch online store]] progress
+│
+04_Planning/1_Weekly/2025-W01.md
 ├── Links to → [[Launch online store]]
 └── Daily tasks from → [[Launch online store - Plan]]
 │
@@ -133,7 +161,7 @@ Create a concise daily report that observes patterns, tracks goals, and provides
 ## Content Guidelines
 
 ### Diary Snapshot
-- Read **latest entry** from `02_Diary/` (find by date-sorted filename)
+- Read **latest entry** from `01_Journal/` (find by date-sorted filename)
 - One-line summary capturing the essence
 - Translate to your primary language if needed
 - Use Wikilink: `[[YYYY-MM-DD]]`
@@ -179,70 +207,20 @@ Create a concise daily report that observes patterns, tracks goals, and provides
 
 ---
 
-# Goal Linking
-
-## Implicit Goal Mentions
-
-Daily diary entries often mention goals indirectly without linking to them. When generating reports, identify these mentions and add proper Wikilinks.
-
-## How to Identify
-
-Look for mentions of:
-- **Projects** (business ideas, creative work, app ideas, etc.)
-- **Habits** (exercise, meditation, reading, etc.)
-- **Learning topics** (languages, skills, technologies)
-- **Health goals** (diet, fasting, medical checkups)
-- **Financial goals** (saving, investing, business ventures)
-
-## Linking Process
-
-When you find an implicit goal mention in a diary entry:
-
-1. **Check if goal exists**: Look in `03_Goals/` for matching goal
-2. **If goal exists**: Add Wikilink in diary entry
-3. **If no goal exists**: Consider noting it in "Suggestions" as a potential goal to formalize
-
-## Examples
-
-### Before (Diary Entry)
-```markdown
-Today I was thinking about publishing books. I need to install the publishing software.
-```
-
-### After (With Link)
-```markdown
-Today I was thinking about publishing books. I need to install the publishing software. [[Publish notebooks]]
-```
-
-### Before (Diary Entry)
-```markdown
-Finally started working out again. Going to try to keep it up this time.
-```
-
-### After (With Link)
-```markdown
-Finally started working out again. Going to try to keep it up this time. [[Exercise regularly]]
-```
-
-## Report Integration
-
-When generating daily reports:
-- **Diary Snapshot**: If the entry mentions an existing goal, include the link
-- **Goals Table**: Cross-reference - if diary worked on a goal, note it in the status column
-- **Suggestions**: If you notice recurring mentions of a topic that has no goal file, suggest creating one
-
-## Length Target
-- **Entire report**: ~40-60 lines
-- **Each section**: concise, scannable
-- **Avoid repetition**: don't restate same points across sections
-
----
-
 # Updating Goals from Daily Journals
 
 ## When Writing Daily Entries
 
-As you write in your daily diary (`02_Diary/YYYY-MM-DD.md`), make it a habit to:
+As you write in your daily diary (`01_Journal/YYYY-MM-DD.md`), make it a habit to link and update your goals.
+
+### What to Link
+
+Look for mentions of:
+- **Projects** (business ideas, creative work, app ideas)
+- **Habits** (exercise, meditation, reading)
+- **Learning topics** (languages, skills, technologies)
+- **Health goals** (diet, fasting, medical checkups)
+- **Financial goals** (saving, investing, business ventures)
 
 ### 1. Link to Goals When You Mention Them
 
@@ -592,7 +570,7 @@ For each paragraph (blank-line separated) in `00_Inbox/Inbox.md`:
 
 1. **Read the note**
 2. **Tag it**: `#idea` | `#note` | `#action` | `#review` | `#research`
-3. **For #action and #note**: Move to diary by appending to `02_Diary/YYYY-MM-DD.md`
+3. **For #action and #note**: Move to diary by appending to `01_Journal/YYYY-MM-DD.md`
 4. **For #review**: CREATE THE REVIEW immediately in `50_Reports/Review/`, then replace tag with link
 5. **For #research**: CREATE THE RESEARCH immediately in `50_Reports/Research/`, then replace tag with link
 6. **Add to daily report** (if `#action` or significant `#idea`): Add to `50_Reports/Daily/YYYY-MM-DD Report.md`
@@ -627,7 +605,7 @@ Create a weekly plan based on recent daily notes, active goals, and their plans.
 
 ### Step 1: Review Recent Diary Entries
 
-Read the latest entries from `02_Diary/` (past 3-7 days) to understand:
+Read the latest entries from `01_Journal/` (past 3-7 days) to understand:
 - What you've been working on
 - Patterns and themes
 - Blocks or challenges
@@ -647,7 +625,7 @@ Based on diary and goals, identify 1-2 main focuses for the week.
 ### Step 4: Create Daily Breakdown
 
 Using the template (`99_Assets/templates/tm_weekly_plan.md`), create:
-- File: `30_Weekly_Plans/YYYY-W##.md`
+- File: `04_Planning/1_Weekly/YYYY-W##.md`
 - Link to goals being worked on
 - Break down goal tasks into daily actionable items
 - Include habits (morning routine, exercise, etc.)

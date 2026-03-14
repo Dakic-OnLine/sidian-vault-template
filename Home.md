@@ -26,7 +26,7 @@ A personal knowledge management system for thinking, planning, and tracking your
 ## Getting Started
 
 1. **Capture quickly** - Use `00_Inbox/Inbox.md` for random thoughts
-2. **Journal daily** - Create entries in `02_Diary/` with today's date
+2. **Journal daily** - Create entries in `01_Journal/` with today's date
 3. **Track goals** - Define goals in `03_Goals/` with plans
 4. **Review regularly** - Weekly, monthly, quarterly reviews keep you on track
 
@@ -37,13 +37,13 @@ A personal knowledge management system for thinking, planning, and tracking your
 | Folder | Purpose | Quick Link |
 |--------|---------|------------|
 | `00_Inbox/` | Quick capture | [[Writing Assignments]] |
-| `01_ThinkingLines/` | Long-form thinking | [[Example - Deep Work]] |
-| `02_Diary/` | Daily journal | [[2026-01-15]] |
-| `02_Longer_writes/` | Extended writing | [[Example - The Art of Deep Work]] |
+| `01_Journal/` | Daily journal | [[2026-01-15]] |
+| `02_MindSpace/` | Long-form thinking | [[Example - Deep Work]] |
+| `02_MindSpace/_LongWriting/` | Extended writing | [[Example - The Art of Deep Work]] |
 | `03_Goals/` | Goals & plans | [[Example - Learn Spanish]] |
-| `30_Weekly_Plans/` | Weekly execution | [[2026-W03]] |
-| `31_Monthly_Reviews/` | Monthly reviews | [[2026-01]] |
-| `32_Quarterly_Strategy/` | Quarterly strategy | [[2026-Q1]] |
+| `04_Planning/1_Weekly/` | Weekly execution | [[2026-W03]] |
+| `04_Planning/2_Monthly/` | Monthly reviews | [[2026-01]] |
+| `04_Planning/3_Quarterly/` | Quarterly strategy | [[2026-Q1]] |
 | `50_Reports/` | Generated reports | [[2026-01-15 Report]] |
 | `99_Assets/` | Templates | [[Templates]] |
 

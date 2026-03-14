@@ -13,8 +13,8 @@ The inbox is a capture point for quick thoughts, ideas, and notes that need to b
 | Tag | Meaning | Goes To |
 |-----|---------|---------|
 | `#idea` | Concept or possibility | Keep for reference, or create goal |
-| `#note` | Observation or reflection | `02_Diary/` with today's date |
-| `#action` | Something to do | `02_Diary/` or create as task |
+| `#note` | Observation or reflection | `01_Journal/` with today's date |
+| `#action` | Something to do | `01_Journal/` or create as task |
 | `#review` | Request for feedback | Creates review report immediately |
 | `#research` | Needs investigation | Creates research report immediately |
 
