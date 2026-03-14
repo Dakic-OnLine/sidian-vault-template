@@ -27,8 +27,9 @@ A personal knowledge management system for thinking, planning, and tracking your
 
 1. **Capture quickly** - Use `00_Inbox/Inbox.md` for random thoughts
 2. **Journal daily** - Create entries in `01_Journal/` with today's date
-3. **Track goals** - Define goals in `03_Goals/` with plans
-4. **Review regularly** - Weekly, monthly, quarterly reviews keep you on track
+3. **Set goals** - Define aspirations in `03_Goals/` with plans
+4. **Run projects** - Execute concrete work in `05_Projects/`
+5. **Review regularly** - Weekly, monthly, quarterly reviews keep you on track
 
 ---
 
@@ -40,10 +41,11 @@ A personal knowledge management system for thinking, planning, and tracking your
 | `01_Journal/` | Daily journal | [[2026-01-15]] |
 | `02_MindSpace/` | Long-form thinking | [[Example - Deep Work]] |
 | `02_MindSpace/_LongWriting/` | Extended writing | [[Example - The Art of Deep Work]] |
-| `03_Goals/` | Goals & plans | [[Example - Learn Spanish]] |
+| `03_Goals/` | Aspirations & direction | [[Example - Learn Spanish]] |
 | `04_Planning/1_Weekly/` | Weekly execution | [[2026-W03]] |
 | `04_Planning/2_Monthly/` | Monthly reviews | [[2026-01]] |
 | `04_Planning/3_Quarterly/` | Quarterly strategy | [[2026-Q1]] |
+| `05_Projects/` | Concrete work & deliverables | [[Example - Build Website]] |
 | `50_Reports/` | Generated reports | [[2026-01-15 Report]] |
 | `99_Assets/` | Templates | [[Templates]] |
 

@@ -63,13 +63,16 @@ This repository is a **GitHub template**. Click the green **"Use this template"*
 01_Journal/          # Daily journal entries (YYYY-MM-DD.md)
 02_MindSpace/        # Conceptual notes and thinking pieces
   └─ _LongWriting/   # Extended writing pieces and essays
-03_Goals/            # Long-term goals and their plans
+03_Goals/            # Aspirations and long-term direction
   ├─ Archive/        # Inactive/paused goals
   └─ Developing/     # Goals being explored
 04_Planning/         # Weekly, Monthly, Quarterly plans
   ├─ 1_Weekly/       # Weekly execution plans
   ├─ 2_Monthly/      # Monthly reviews
   └─ 3_Quarterly/    # Quarterly strategy
+05_Projects/         # Active projects (concrete work)
+  ├─ Backlog/        # Planned but not started
+  └─ Archive/        # Completed or paused
 50_Reports/          # Generated reports
   ├─ Daily/          # Daily reports
   ├─ Research/       # Research reports
@@ -91,14 +94,19 @@ The system works on four time levels:
 | Weekly | `04_Planning/1_Weekly/` | Execute on daily tasks |
 | Daily | `01_Journal/` | Journal and reflect |
 
-### Goal System
+### Goal & Project System
 
-Goals live in `03_Goals/` with three states:
+**Goals** (`03_Goals/`) are aspirations - what you want to achieve long-term:
 - **Active**: In the main folder, tracked in reviews
 - **Developing**: In `Developing/`, still exploring
 - **Archived**: In `Archive/`, inactive but saved
 
-Each goal has a companion plan file with actionable next steps.
+**Projects** (`05_Projects/`) are concrete work - specific deliverables with clear outcomes:
+- **Active**: In-progress projects you're building
+- **Backlog**: Planned but not yet started
+- **Completed**: Shipped and done
+
+Goals inspire; Projects execute. A goal like "Become a published author" might have a project "Write first novel."
 
 ### Inbox Processing
 

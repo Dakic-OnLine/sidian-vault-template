@@ -20,13 +20,16 @@
 01_Journal/          # Daily journal entries (YYYY-MM-DD.md)
 02_MindSpace/        # Conceptual notes and thinking pieces
   └─ _LongWriting/   # Extended writing pieces and essays
-03_Goals/            # Long-term goals and their plans
+03_Goals/            # Aspirations and long-term direction
   ├─ Archive/        # Inactive/paused goals (excluded from reviews)
   └─ Developing/     # Goals still being formed or explored
 04_Planning/         # Weekly, Monthly, Quarterly plans
   ├─ 1_Weekly/       # Weekly execution plans (YYYY-W##.md)
   ├─ 2_Monthly/      # Monthly reviews (YYYY-MM.md)
   └─ 3_Quarterly/    # Quarterly strategy (YYYY-Q#.md)
+05_Projects/         # Active projects (concrete work)
+  ├─ Backlog/        # Planned but not started
+  └─ Archive/        # Completed or paused
 50_Reports/          # Reports organized by type
   ├─ Daily/          # Daily reports (YYYY-MM-DD Report.md)
   ├─ Research/       # Research reports (Research - Topic.md)
@@ -44,7 +47,8 @@
 | Quarterly | `04_Planning/3_Quarterly/` | High-level strategy, new goals | `YYYY-Q#.md` |
 | Monthly | `04_Planning/2_Monthly/` | Review progress, adjust goals | `YYYY-MM.md` |
 | Weekly | `04_Planning/1_Weekly/` | Execute on goals, daily breakdown | `YYYY-W##.md` |
-| Goals | `03_Goals/` | Long-term goals and plans | `Goal Name.md` |
+| Goals | `03_Goals/` | Long-term aspirations and direction | `Goal Name.md` |
+| Projects | `05_Projects/` | Concrete work with deliverables | `Project Name.md` |
 | Daily | `01_Journal/` | Journal entries | `YYYY-MM-DD.md` |
 
 ### How They Connect
@@ -97,6 +101,62 @@
 03_Goals/Launch online store.md
 └── Contains plan link → [[Launch online store - Plan]]
 ```
+
+---
+
+# Goals vs Projects
+
+## The Difference
+
+| Goals | Projects |
+|-------|----------|
+| **Aspirations** - what you want to become | **Work** - what you're building |
+| Long-term direction | Specific deliverable |
+| May never fully "complete" | Has a clear finish line |
+| Inspires and motivates | Executes and ships |
+| Lives in `03_Goals/` | Lives in `05_Projects/` |
+
+## Examples
+
+| Goal (Aspiration) | Project (Concrete) |
+|-------------------|---------------------|
+| Become a published author | Write my first novel |
+| Get fit and healthy | Complete 12-week fitness program |
+| Learn to code | Build a personal website |
+| Build passive income | Launch an online course |
+| Master photography | Complete 365 photo challenge |
+
+## How They Work Together
+
+1. **Goals give direction** - They answer "Why am I doing this?"
+2. **Projects are the vehicle** - They answer "What am I building?"
+3. **Plans connect them** - A goal's plan often includes specific projects
+
+### Workflow
+
+```
+Goal: "Become a published author"
+│
+├── Project: "Write first novel" (Active)
+│   └── Plan: Outline → Draft → Edit → Submit
+│
+└── Project: "Build author platform" (Backlog)
+    └── Plan: Website → Social media → Newsletter
+```
+
+## When to Create a Project
+
+Create a project when:
+- There's a specific deliverable (a thing that will exist when done)
+- You can define "done" clearly
+- It supports one or more of your goals
+- It requires multiple steps over time
+
+## Project Lifecycle
+
+1. **Backlog** (`05_Projects/Backlog/`) - Ideas you want to do but haven't started
+2. **Active** (`05_Projects/` root) - Currently working on (limit to 2-3)
+3. **Archived** (`05_Projects/Archive/`) - Completed, paused, or cancelled
 
 ---
 
