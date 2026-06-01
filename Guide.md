@@ -16,7 +16,9 @@
 ## Folder Organization
 
 ```
-00_Inbox/            # Quick capture for thoughts, ideas, assignments
+Inbox.md              # Main inbox for quick thoughts, requests, and AI processing
+00_Inbox/            # Supporting inbox area for bookmarks and reference capture
+  └─ Bookmarks.md    # Bookmarklet saves links here as simple blocks
 01_Journal/          # Daily journal entries (YYYY-MM-DD.md)
 02_MindSpace/        # Conceptual notes and thinking pieces
   └─ _LongWriting/   # Extended writing pieces and essays
@@ -31,7 +33,7 @@
   ├─ Backlog/        # Planned but not started
   └─ Archive/        # Completed or paused
 50_Reports/          # Reports organized by type
-  ├─ Daily/          # Daily reports (YYYY-MM-DD Report.md)
+  ├─ Daily/          # Morning reports and evening reflections
   ├─ Research/       # Research reports (Research - Topic.md)
   └─ Review/         # Review reports (Review - Topic.md)
 99_Assets/           # Templates
@@ -74,19 +76,6 @@
 
 ### Example Workflow
 
-```
-04_Planning/3_Quarterly/2025-Q1.md
-├── Creates → [[Launch online store]] in 03_Goals/
-│
-04_Planning/2_Monthly/2025-01.md
-├── Reviews → [[Launch online store]] progress
-│
-04_Planning/1_Weekly/2025-W01.md
-├── Links to → [[Launch online store]]
-└── Daily tasks from → [[Launch online store - Plan]]
-│
-03_Goals/Launch online store.md
-└── Contains plan link → [[Launch online store - Plan]]
 ```
 04_Planning/3_Quarterly/2025-Q1.md
 ├── Creates → [[Launch online store]] in 03_Goals/
@@ -160,11 +149,16 @@ Create a project when:
 
 ---
 
-# Report Generation Instructions
+# Scheduled Report Instructions
 
-Create a concise daily report that observes patterns, tracks goals, and provides encouragement.
+Sidian produces two default scheduled reports each day:
 
-## Report Format
+- **Morning report** — default 6:00 a.m. in the user's timezone, written to `50_Reports/Daily/YYYY-MM-DD Report.md`
+- **Evening reflection** — default 8:00 p.m. in the user's timezone, written to `50_Reports/Daily/YYYY-MM-DD Evening Reflection.md`
+
+Both reports should link to the relevant daily note so Obsidian backlinks connect the report and note without editing the daily note itself.
+
+## Morning Report Format
 - **Format**: Markdown (.md)
 - **Location**: `50_Reports/Daily/` folder
 - **Filename**: `YYYY-MM-DD Report.md` (today's date)
@@ -216,6 +210,32 @@ Create a concise daily report that observes patterns, tracks goals, and provides
 ## Summary & Encouragement
 
 [1-2 sentences of honest reflection + 1 encouraging sentence + 1 concrete suggestion for today]
+```
+
+## Evening Reflection Format
+- **Format**: Markdown (.md)
+- **Location**: `50_Reports/Daily/` folder
+- **Filename**: `YYYY-MM-DD Evening Reflection.md`
+- **Skip the run** if there is no daily note for the current day
+
+### Evening Reflection Structure
+
+```markdown
+# Evening Reflection - YYYY-MM-DD
+
+## Daily Note: [[YYYY-MM-DD]]
+
+[Brief summary of the day's work and overall momentum]
+
+## Changed Notes Reviewed
+- [[Note Name]] - [What changed or why it mattered]
+- [[Another Note]] - [What changed or why it mattered]
+
+## Progress Against Goals
+- [Short progress update tied to one or more goals or plans]
+
+## Suggested Next Step
+- [One concrete next step for tomorrow or the next work session]
 ```
 
 ## Content Guidelines
@@ -475,6 +495,8 @@ If you use AI to generate reports, ask it to:
 | `#review` | Feedback, analysis, perspective on your question | `Review - Topic.md` (shorter, opinion/analysis) |
 | `#research` | Deep research with web search, sources, findings | `Research - Topic.md` (longer, research-heavy) |
 
+Direct mentions are also valid requests. If a note or inbox paragraph explicitly mentions `@Alex` or `@Nova`, each named specialist should review that same request and Sidian should return one combined entry integrating their input.
+
 ## Process
 
 ### For #review
@@ -549,8 +571,8 @@ If you use AI to generate reports, ask it to:
 ## File Naming
 
 Both go in `50_Reports/` subfolders:
-- `#review` → `Review/[Topic Name].md` (creates `Review - Topic Name.md`)
-- `#research` → `Research/[Topic Name].md` (creates `Research - Topic Name.md`)
+- `#review` → `50_Reports/Review/Review - Topic Name.md`
+- `#research` → `50_Reports/Research/Research - Topic Name.md`
 
 ## Examples
 
@@ -629,29 +651,38 @@ The daily review process captures random thoughts from root `Inbox.md`, tags the
 For each paragraph (blank-line separated) in root `Inbox.md`:
 
 1. **Read the note**
-2. **Tag it**: `#idea` | `#note` | `#action` | `#review` | `#research`
-3. **For #action and #note**: Move to diary by appending to `01_Journal/YYYY-MM-DD.md`
-4. **For #review**: CREATE THE REVIEW immediately in `50_Reports/Review/`, then replace tag with link
-5. **For #research**: CREATE THE RESEARCH immediately in `50_Reports/Research/`, then replace tag with link
-6. **Add to daily report** (if `#action` or significant `#idea`): Add to `50_Reports/Daily/YYYY-MM-DD Report.md`
-7. **Remove from Inbox**: Delete processed note
+2. **Classify it** using context, tags, and any direct mentions such as `@Clara`, `@Alex`, or `@Nova`
+3. **Let Clara decide the destination**:
+   - Move it into the current daily note when it belongs there
+   - Create a review in `50_Reports/Review/` when it is a `#review` request
+   - Create research in `50_Reports/Research/` when it is a `#research` request
+   - Keep it in `Inbox.md` with `#unresolved` when there is no clear destination yet
+4. **Use tags as routing cues, not rigid rules**: `#action` and `#note` often belong in the daily note, but Clara may choose a different outcome when the surrounding context points elsewhere
+5. **Update the morning report** when the inbox item materially changes today's priorities, plans, or context
+6. **Remove processed paragraphs** from `Inbox.md`; only unresolved material should remain there
 
-### Step 2: Complete Daily Report
+### Step 2: Complete Morning Report
 
-Follow the report format above, including any new items from the inbox. Create in `50_Reports/Daily/YYYY-MM-DD Report.md`.
+Follow the morning report format above, including any meaningful context or actions surfaced from inbox processing. Create or update `50_Reports/Daily/YYYY-MM-DD Report.md`.
+
+### Step 3: Complete Evening Reflection
+
+At the evening review time, read the changed notes from the current day. If there is no daily note for that day, skip the evening reflection. Otherwise, create or update `50_Reports/Daily/YYYY-MM-DD Evening Reflection.md` and link it to that day's daily note.
 
 ## Automation
 
 When AI processes inbox:
 
-1. **For #action and #note**: Append to today's diary with tag
-2. **For #review**: Create review report immediately, link from diary
-3. **For #research**: Launch research subagent immediately, link from diary when complete
-4. **Clear `Inbox.md`** when all items processed
+1. Clara reads `Guide.md` first and uses it to interpret the current workflow
+2. Clara processes root `Inbox.md` paragraph by paragraph
+3. `#review` requests create review reports immediately
+4. `#research` requests create research reports immediately
+5. Named specialists like `@Alex` or `@Nova` contribute to the same combined entry when requested
+6. `#unresolved` is the default marker for anything left in `Inbox.md`
 
 ## Template
 
-See `99_Assets/templates/tm_daily_review.md` for the full daily review template.
+Use the structures in this guide as the source of truth for scheduled reports and inbox processing; there is no separate dedicated daily-review template file.
 
 ---
 
