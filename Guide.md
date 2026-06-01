@@ -608,7 +608,7 @@ When generating daily reports, check if the diary entry contains `#review` or `#
 
 ## Overview
 
-The daily review process captures random thoughts from `00_Inbox/Inbox.md`, tags them, and distributes them to appropriate locations.
+The daily review process captures random thoughts from root `Inbox.md`, tags them, and distributes them to appropriate locations.
 
 ## Tag Types
 
@@ -624,9 +624,9 @@ The daily review process captures random thoughts from `00_Inbox/Inbox.md`, tags
 
 ## Process
 
-### Step 1: Process @00_Inbox/Inbox.md
+### Step 1: Process `Inbox.md`
 
-For each paragraph (blank-line separated) in `00_Inbox/Inbox.md`:
+For each paragraph (blank-line separated) in root `Inbox.md`:
 
 1. **Read the note**
 2. **Tag it**: `#idea` | `#note` | `#action` | `#review` | `#research`
@@ -647,7 +647,7 @@ When AI processes inbox:
 1. **For #action and #note**: Append to today's diary with tag
 2. **For #review**: Create review report immediately, link from diary
 3. **For #research**: Launch research subagent immediately, link from diary when complete
-4. **Clear 00_Inbox/Inbox.md** when all items processed
+4. **Clear `Inbox.md`** when all items processed
 
 ## Template
 

@@ -1,29 +1,20 @@
-# Inbox
+# 00_Inbox
 
-The inbox is a capture point for quick thoughts, ideas, and notes that need to be processed later.
+`00_Inbox/` is a supporting capture area for bookmark and reference material.
 
-## How to Use
+## Files
 
-1. **Capture quickly** - Don't worry about organization, just get it down
-2. **Tag each item** - Use `#idea`, `#note`, `#action`, `#review`, or `#research`
-3. **Process regularly** - During daily review, move items to appropriate locations
+- `Bookmarks.md` — links saved by the bookmarklet, stored newest first
 
-## Tags
+## Main Inbox
 
-| Tag | Meaning | Goes To |
-|-----|---------|---------|
-| `#idea` | Concept or possibility | Keep for reference, or create goal |
-| `#note` | Observation or reflection | `01_Journal/` with today's date |
-| `#action` | Something to do | `01_Journal/` or create as task |
-| `#review` | Request for feedback | Creates review report immediately |
-| `#research` | Needs investigation | Creates research report immediately |
+Use root `Inbox.md` for quick thoughts, requests, and anything Sidian should process during review.
 
-## Processing
+## Bookmark Format
 
-During daily review:
-1. Read each item in Inbox
-2. Decide where it belongs
-3. Move it or link it appropriately
-4. Clear processed items from Inbox
+Each bookmark entry should be a simple block containing:
 
-**Tip**: Keep your inbox lean. Process it daily so it doesn't become overwhelming.
+1. Title
+2. URL
+3. Summary
+4. Date added

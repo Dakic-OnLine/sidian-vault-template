@@ -25,11 +25,12 @@ A personal knowledge management system for thinking, planning, and tracking your
 
 ## Getting Started
 
-1. **Capture quickly** - Use `00_Inbox/Inbox.md` for random thoughts
+1. **Capture quickly** - Use root `Inbox.md` for random thoughts and requests
 2. **Journal daily** - Create entries in `01_Journal/` with today's date
 3. **Set goals** - Define aspirations in `03_Goals/` with plans
 4. **Run projects** - Execute concrete work in `05_Projects/`
 5. **Review regularly** - Weekly, monthly, quarterly reviews keep you on track
+6. **Save bookmarks** - Use `00_Inbox/Bookmarks.md` for articles and videos you want to revisit
 
 ---
 

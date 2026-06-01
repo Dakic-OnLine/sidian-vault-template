@@ -53,13 +53,14 @@ This repository is a **GitHub template**. Click the green **"Use this template"*
 1. Open this folder as a vault in Obsidian
 2. Start at `Home.md` - your personal dashboard
 3. Read `Guide.md` for complete system documentation
-4. Capture quick thoughts in `00_Inbox/Inbox.md`
+4. Capture quick thoughts in root `Inbox.md`
 5. Create your first daily entry in `01_Journal/`
 
 ## Folder Structure
 
 ```
-00_Inbox/            # Quick capture for thoughts, ideas, assignments
+Inbox.md              # Main inbox for requests, notes, and AI processing
+00_Inbox/            # Supporting inbox area for bookmarks and reference capture
 01_Journal/          # Daily journal entries (YYYY-MM-DD.md)
 02_MindSpace/        # Conceptual notes and thinking pieces
   └─ _LongWriting/   # Extended writing pieces and essays
@@ -110,12 +111,14 @@ Goals inspire; Projects execute. A goal like "Become a published author" might h
 
 ### Inbox Processing
 
-Use `00_Inbox/Inbox.md` to quickly capture thoughts. Tag each item:
+Use root `Inbox.md` to quickly capture thoughts. Tag each item:
 - `#idea` - Concepts and possibilities
 - `#note` - Observations and reflections
 - `#action` - Things to implement
 - `#review` - Request feedback
 - `#research` - Deep dive needed
+
+Bookmarks captured by the bookmarklet are stored separately in `00_Inbox/Bookmarks.md`.
 
 ## Documentation
 
